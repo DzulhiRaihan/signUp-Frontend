@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href=".\output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="flex justify-center items-center min-h-screen">
+    <div class="w-[1280px] relative mt-[90px]">
+      <!-- Untuk Navbar -->
+      <nav
+        class="flex justify-between items-center p-6 font-Poppins h-[90px] shadow-md shadow-gray-300/50 fixed top-0 right-0 left-0 bg-white z-10"
+      >
+        <div
+          class="w-full flex justify-between items-center mx-[75px] my-[20px]"
+        >
+          <div class="flex flex-row items-center gap-[50px]">
+            <div class="text-2xl flex items-center">
+              <img src="assets/images/logo-64.png" alt="logo" />
+              <span class="ml-2 font-poppins font-extrabold"> Obito </span>
+            </div>
+
+            <div
+              class="flex space-x-[40px] text-gray-600 font-normal font-poppins"
+            >
+              <a href="#" class="text-black font-semibold">Home</a>
+              <a href="#" class="hover:text-black">Pricing</a>
+              <a href="#" class="hover:text-black">Features</a>
+              <a href="#" class="hover:text-black">Testimonials</a>
+            </div>
+          </div>
+          <div class="font-poppins font-semibold justify-between">
+            <div class="flex space-x- items-center">
+              <button
+                class="hover:bg-gray-200 py-1 px-1 rounded-[5px] cursor-pointer transition duration-300"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 12.2V13.9C20 17.05 18.2 18.4 15.5 18.4H6.5C3.8 18.4 2 17.05 2 13.9V8.5C2 5.35 3.8 4 6.5 4H9.2C9.07 4.38 9 4.8 9 5.25V9.15002C9 10.12 9.32 10.94 9.89 11.51C10.46 12.08 11.28 12.4 12.25 12.4V13.79C12.25 14.3 12.83 14.61 13.26 14.33L16.15 12.4H18.75C19.2 12.4 19.62 12.33 20 12.2Z"
+                    stroke="#0A0723"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 5.25V9.15002C22 10.64 21.24 11.76 20 12.2C19.62 12.33 19.2 12.4 18.75 12.4H16.15L13.26 14.33C12.83 14.61 12.25 14.3 12.25 13.79V12.4C11.28 12.4 10.46 12.08 9.89 11.51C9.32 10.94 9 10.12 9 9.15002V5.25C9 4.8 9.07 4.38 9.2 4C9.64 2.76 10.76 2 12.25 2H18.75C20.7 2 22 3.3 22 5.25Z"
+                    stroke="#0A0723"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.40002 22H14.6"
+                    stroke="#0A0723"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11 18.4V22"
+                    stroke="#0A0723"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.4955 7.25H18.5045"
+                    stroke="#0A0723"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.6957 7.25H15.7047"
+                    stroke="#0A0723"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.8954 7.25H12.9044"
+                    stroke="#0A0723"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <div class="h-[50px] bg-[#EAECEE] w-0.5 mx-[20px]"></div>
+              <button
+                class="cursor-pointer px-4 py-2 border rounded-[50px] w-[102px] h-[48px] border-[#EAECEE] mr-[12px] hover:bg-gray-200 transition duration-300"
+              >
+                Sign Up
+              </button>
+              <button
+                class="cursor-pointer px-4 py-2 bg-[#2F6A62] rounded-[50px] w-[137px] h-[48px] text-white hover:bg-[#1D453F] transition duration-300"
+              >
+                My Account
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Konten utama -->
+      <div class="flex h-full font-poppins">
+        <!-- Form -->
+        <div
+          class="w-[510px] h-[747-px] flex flex-col px-[20px] py-[20px] my-[50px] ml-[50px] mr-[75px] rounded-[20px] shadow"
+        >
+          <h2 class="text-2xl font-bold mb-6 font-poppins">
+            Upgrade Your Skills
+          </h2>
+          <div class="flex flex-col space-y-[16px]">
+            <!-- Profile Picture -->
+            <div class="flex items-center space-x-4 mb-6">
+              <label for="upload-photo" class="cursor-pointer">
+                <div
+                  class="w-[90px] h-[90px] border-gray-200 border-[1px] rounded-full flex items-center justify-center bg-[#fffff] overflow-hidden"
+                >
+                  <img
+                    id="preview-image"
+                    class="hidden w-full h-full object-cover rounded-full"
+                  />
+                  <span
+                    id="upload-text"
+                    class="font-semibold text-[14px] text-black text-center"
+                    >Add<br />Photo</span
+                  >
+                </div>
+                <input
+                  type="file"
+                  id="upload-photo"
+                  class="hidden"
+                  accept="image/*"
+                  onchange="previewImage(event)"
+                />
+              </label>
+
+              <!-- Delete Button -->
+              <button
+                id="delete-photo"
+                class="hidden w-[106px] h-[30px] mt-2 bg-[#FFE3E1] text-red-500 text-sm rounded-[50px] font-poppins font-bold text-[12px] hover:bg-[#FFC9C7] transition duration-300"
+                onclick="removeImage()"
+              >
+                DELETE PHOTO
+              </button>
+            </div>
+
+            <!-- Form -->
+            <form class="space-y-4">
+              <div>
+                <label class="block text-gray-700">Complete Name</label>
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-3 flex items-center mt-1"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.1333 9.05829C10.05 9.04996 9.95 9.04996 9.85834 9.05829C7.875 8.99163 6.3 7.36663 6.3 5.36663C6.3 3.32496 7.95 1.66663 10 1.66663C12.0417 1.66663 13.7 3.32496 13.7 5.36663C13.6917 7.36663 12.1167 8.99163 10.1333 9.05829Z"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.96666 12.1334C3.95 13.4834 3.95 15.6834 5.96666 17.025C8.25833 18.5584 12.0167 18.5584 14.3083 17.025C16.325 15.675 16.325 13.475 14.3083 12.1334C12.025 10.6084 8.26666 10.6084 5.96666 12.1334Z"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    placeholder="Type your username"
+                    class="w-full p-3 border-gray-200 border-[1px] rounded-[50px] mt-1 pl-10 font-semibold placeholder:font-normal"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-gray-700">Occupation</label>
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-3 flex items-center mt-1"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.66667 18.3333H13.3333C16.6833 18.3333 17.2833 16.9917 17.4583 15.3583L18.0833 8.69167C18.3083 6.65833 17.725 5 14.1667 5H5.83333C2.275 5 1.69166 6.65833 1.91666 8.69167L2.54166 15.3583C2.71666 16.9917 3.31666 18.3333 6.66667 18.3333Z"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.66667 4.99996V4.33329C6.66667 2.85829 6.66667 1.66663 9.33334 1.66663H10.6667C13.3333 1.66663 13.3333 2.85829 13.3333 4.33329V4.99996"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.6667 10.8333V11.6667C11.6667 11.675 11.6667 11.675 11.6667 11.6833C11.6667 12.5917 11.6583 13.3333 10 13.3333C8.34999 13.3333 8.33333 12.6 8.33333 11.6917V10.8333C8.33333 10 8.33333 10 9.16666 10H10.8333C11.6667 10 11.6667 10 11.6667 10.8333Z"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.0417 9.16663C16.1167 10.5666 13.9167 11.4 11.6667 11.6833"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.18333 9.39172C4.05833 10.6751 6.175 11.4501 8.33333 11.6917"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    placeholder="Type your Occupation"
+                    class="w-full p-3 border-gray-200 border-[1px] rounded-[50px] mt-1 pl-10 font-semibold placeholder:font-normal"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-gray-700">Email Address </label>
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-3 flex items-center mt-1"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1667 17.0833H5.83334C3.33334 17.0833 1.66667 15.8333 1.66667 12.9166V7.08329C1.66667 4.16663 3.33334 2.91663 5.83334 2.91663H14.1667C16.6667 2.91663 18.3333 4.16663 18.3333 7.08329V12.9166C18.3333 15.8333 16.6667 17.0833 14.1667 17.0833Z"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.1667 7.5L11.5583 9.58333C10.7 10.2667 9.29166 10.2667 8.43332 9.58333L5.83333 7.5"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="email"
+                    placeholder="Type your valid email address"
+                    class="w-full p-3 border-gray-200 border-[1px] rounded-[50px] mt-1 pl-10 font-semibold placeholder:font-normal"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-gray-700">Password</label>
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-3 flex items-center mt-1"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.74166 1.85836L4.58333 3.42503C3.62499 3.78336 2.84166 4.9167 2.84166 5.93336V12.125C2.84166 13.1084 3.49166 14.4 4.28333 14.9917L7.86666 17.6667C9.04166 18.55 10.975 18.55 12.15 17.6667L15.7333 14.9917C16.525 14.4 17.175 13.1084 17.175 12.125V5.93336C17.175 4.90836 16.3917 3.77503 15.4333 3.4167L11.275 1.85836C10.5667 1.60003 9.43333 1.60003 8.74166 1.85836Z"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10 10.4166C10.9205 10.4166 11.6667 9.67045 11.6667 8.74998C11.6667 7.82951 10.9205 7.08331 10 7.08331C9.07952 7.08331 8.33333 7.82951 8.33333 8.74998C8.33333 9.67045 9.07952 10.4166 10 10.4166Z"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10 10.4167V12.9167"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="Type your password"
+                    class="w-full p-3 border-gray-200 border-[1px] rounded-[50px] mt-1 pl-10 font-semibold placeholder:font-normal"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-gray-700">Confirm Password</label>
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-3 flex items-center mt-1"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.74166 1.85836L4.58333 3.42503C3.62499 3.78336 2.84166 4.9167 2.84166 5.93336V12.125C2.84166 13.1084 3.49166 14.4 4.28333 14.9917L7.86666 17.6667C9.04166 18.55 10.975 18.55 12.15 17.6667L15.7333 14.9917C16.525 14.4 17.175 13.1084 17.175 12.125V5.93336C17.175 4.90836 16.3917 3.77503 15.4333 3.4167L11.275 1.85836C10.5667 1.60003 9.43333 1.60003 8.74166 1.85836Z"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10 10.4166C10.9205 10.4166 11.6667 9.67045 11.6667 8.74998C11.6667 7.82951 10.9205 7.08331 10 7.08331C9.07952 7.08331 8.33333 7.82951 8.33333 8.74998C8.33333 9.67045 9.07952 10.4166 10 10.4166Z"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10 10.4167V12.9167"
+                        stroke="#0A0723"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    placeholder="Confirm your password"
+                    class="w-full p-3 border-gray-200 border-[1px] rounded-[50px] mt-1 pl-10 font-semibold placeholder:font-normal"
+                  />
+                </div>
+                <p id="error-message" class="text-red-500 text-sm mt-1 hidden">
+                  Passwords do not match!
+                </p>
+              </div>
+
+              <button
+                onclick="validatePasswords()"
+                class="cursor-pointer w-full bg-[#2F6A62] hover:bg-[#1D453F] text-white py-3 rounded-[50px] mt-4 font-semibold transition duration-300"
+              >
+                Create My Account
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="">
+          <img
+            src="assets/images/image.png"
+            alt="Programmers"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
