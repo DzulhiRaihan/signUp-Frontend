@@ -22,13 +22,23 @@ function previewImage(event) {
   }
 
   function validatePasswords() {
+  
+    document.getElementById("password-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Mencegah refresh form
+
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirm-password").value;
-    const errorMessage = document.getElementById("error-message");
+    const message = document.getElementById("message");
 
-    if (password !== confirmPassword) {
-      errorMessage.classList.remove("hidden");
+    if (password === "" || confirmPassword === "") {
+      message.textContent = "Password fields cannot be empty!";
+      message.className = "text-red-500 text-sm mt-1"; // Warna merah untuk error
+    } else if (password !== confirmPassword) {
+      message.textContent = "Passwords do not match!";
+      message.className = "text-red-500 text-sm mt-1"; // Warna merah untuk error
     } else {
-      errorMessage.classList.add("hidden");
+      message.textContent = "Passwords match! ✅";
+      message.className = "text-green-500 text-sm mt-1"; // Warna hijau untuk sukses
     }
+  });
   }
